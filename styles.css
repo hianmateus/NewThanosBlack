@@ -260,10 +260,96 @@ main {
     color: white;
     background-image: linear-gradient(325deg, #D8B631 0%, #FFCE0E 100%);
     box-shadow: 0px 0px 10px 0px #FFCE0E;
-    margin-top: 25px;
+    margin-top: 35px;
     cursor: pointer;
 }
 
 .ButtonSec3:hover {
     box-shadow: 0px 0px 20px 0px #FFCE0E;
+}
+
+/* Seçao 4 */
+
+.Section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 120vh;
+    border-bottom: solid 4px #D8B631;
+}
+
+.DivSec4Start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: solid 3px #D8B631;
+    width: 70%;
+    margin-bottom: 35px;
+}
+
+.h1sec4{
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 29px;
+    height: 33px;
+    font-weight: 400;
+}
+
+.h2sec4{
+    color: #D8B631;
+    font-family: "Poppins", Sans-serif;
+    font-size: 39px;
+    font-weight: 900;
+}
+
+.DivSec4Center{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 55px;
+    align-items: center;
+    justify-content: center;
+}
+
+.textsec4{
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 650px;
+}
+
+.FrascoLogoSec4{
+    width: 300px;
+    border: solid 3px #FFCE0E;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px #FFCE0E;
+}
+
+.DivSec4End{
+    border-bottom: solid 3px #D8B631;
+    padding-bottom: 20px;
+}
+
+.text1Sec4{
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 700px;
+}
+
+.text2Sec4{
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
 }
