@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -19,6 +20,7 @@
         <div class="Mask1"></div>
         <div class="Mask2"></div>
 
+        <i class='bx bxl-whatsapp ContactIcon'></i>
 
         <section class="Section1">
 
@@ -74,8 +76,8 @@
                         BLACK</h2>
                 </div>
 
-                <iframe class="VideoSec2" width="560" height="315" src="https://www.youtube.com/embed/BpRNCNselUI"
-                    frameborder="0" allowfullscreen></iframe>
+                <iframe class="VideoSec2" src="https://www.youtube.com/embed/BpRNCNselUI" frameborder="0"
+                    allowfullscreen></iframe>
 
                 <button class="ButtonSec2">QUERO ESSA MUDANÇA NA MINHA VIDA</button>
 
@@ -328,7 +330,8 @@
                     </div>
 
                     <p class="TextSec8">O Thanos Black é ÚNICO.</p>
-                    <p class="TextSec82">Não existe outro produto no mercado como ele. Sua fórmula única foi desenvolvida
+                    <p class="TextSec82">Não existe outro produto no mercado como ele. Sua fórmula única foi
+                        desenvolvida
                         em um laboratório parceiro com as especificações dadas pela nossa equipe de profissionais, ou
                         seja, você não vai encontrar o Thanos Black em nenhum outro lugar! É só com a gente.</p>
 
@@ -415,16 +418,59 @@
 
                 <ul>
 
-                    <li class="liSec10">Quantas cápsulas vem em um frasco?</li>
-                    <li class="liSec10">Quantas cápsulas tomar por dia?</li>
-                    <li class="liSec10">Qual o melhor horário para consumir o Thanos Black?</li>
-                    <li class="liSec10">Quando comprar o Thanos Black, quanto tempo vai demorar para chegar?</li>
-                    <li class="liSec10">Qual o valor do frete?</li>
-                    <li class="liSec10">Existe alguma contraindicação?</li>
-                    <li class="liSec10">Sou mulher, posso consumir Thanos Black?</li>
-                    <li class="liSec10">Sou mulher, usar o Thanos Black pode me causar características masculinas?</li>
-                    <li class="liSec10">O uso do suplemento pode causar queda de cabelo ou espinhas?</li>
-                    <li class="liSec10">Qual a diferença entre o Thanos Black e o Testolife?</li>
+                    <li onclick="ShowAsk()" class="liSec10">Quantas cápsulas vem em um frasco?
+                        <p class="liP10">Um frasco de Thanos Black contém 60 cápsulas.</p>
+                    </li>
+                    <li onclick="ShowAsk()" class="liSec10">Quantas cápsulas tomar por dia?
+                        <p class="liP10">Se você é aluno Elite da Musculação, não se preocupe, nossa equipe vai definir
+                            direitinho
+                            quantas cápsulas você deve tomar por dia. Se você ainda não é aluno nosso, recomendamos 3
+                            por dia.</p>
+                    </li>
+                    <li onclick="ShowAsk()" class="liSec10">Qual o melhor horário para consumir o Thanos Black?
+                        <p class="liP10">O melhor efeito do Thanos vem se você consumi-lo antes de dormir. Esse é o
+                            horário que
+                            recomendamos aos nossos alunos.</p>
+                    </li>
+                    <li onclick="ShowAsk()" class="liSec10">Quando comprar o Thanos Black, quanto tempo vai demorar para
+                        chegar?
+                        <p class="liP10">Isso depende da sua localização. Nossa fornecedora fica no estado de São Paulo,
+                            por isso,
+                            pedidos feitos para o sudeste do Brasil são os de menor frete. No caso mais extremo, pedidos
+                            para o extremo norte do Brasil podem levar no máximo 11 dias úteis.</p>
+                    </li>
+                    <li onclick="ShowAsk()" class="liSec10">Qual o valor do frete?
+                        <p class="liP10">Se você é aluno Elite da Musculação, você NÃO PAGA taxa de frete! Se você não é
+                            aluno nosso,
+                            o valor pode flutuar, a depender também da sua localização e da empresa de transporte que
+                            preferir.</p>
+                    </li>
+                    <li onclick="ShowAsk()" class="liSec10">Existe alguma contraindicação?
+                        <p class="liP10">Não. Como o Thanos Black usa apenas de ingredientes naturais, ele não pode
+                            causar nenhum dano
+                            a nenhum tipo de pessoa.</p>
+                    </li>
+                    <li onclick="ShowAsk()" class="liSec10">Sou mulher, posso consumir Thanos Black?
+                        <p class="liP10">Com certeza! Mulheres já produzem 10 vezes menos testosterona que homens, o que
+                            dificulta o
+                            ganho de massa magra e a queima de gordura. E mais, muitas mulheres fazem uso de
+                            anticoncepcional, que faz uso de hormônios que inibem a testosterona, diminuindo ainda mais
+                            a sua capacidade de ter os ganhos que busca na academia</p>
+                    </li>
+                    <li onclick="ShowAsk()" class="liSec10">O uso do suplemento pode causar queda de cabelo ou espinhas?
+                        <p class="liP10">Não. O hanos Black só potencializa sua produção natural de testosterona, ou
+                            seja, ele não
+                            pode e não vai te fazer produzir mais do que o que seria natural para seu corpo. Sendo
+                            assim, você não vai produzir tanta testosterona quanto um homem, apenas vai passar a
+                            produzir o máximo que o seu corpo pode utilizar bem.</p>
+                    </li>
+                    <li onclick="ShowAsk()" class="liSec10">Qual a diferença entre o Thanos Black e o Testolife?
+                        <p class="liP10">ambos têm como consequência principal a produção de testosterona, mas enquanto
+                            o Testolife
+                            ajuda na vasodilatação, força física e funciona como um ótimo pré-treino, o Thanos Black é o
+                            mais próximo que existe de uma entrega de testosterona pura SEM O USO DE ANABOLIZANTES, ou
+                            seja, ele é ainda mais potente.</p>
+                    </li>
 
                 </ul>
 

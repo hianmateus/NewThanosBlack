@@ -8,3 +8,17 @@ function OpenMask() {
 }
 
 OpenMask()
+
+function ShowAsk() {
+    const Ask = document.querySelector('.liSec10')
+    const Anw = document.querySelector('.liP10')
+
+    function ShowAnw() {
+        Anw.style.display = "flex"
+        Ask.style.color = "#D8B631"
+    }
+
+
+    Ask.addEventListener('click', ShowAnw)
+
+}
