@@ -8,9 +8,33 @@
     transition: all 0.8s;
 }
 
+body{
+    background-color: #000000;
+}
+
 main {
     min-width: 1000px;
 }
+
+.Mask1{
+    position: fixed;
+    z-index: 2;
+    background-color: #000000;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: 2s ease;
+}
+.Mask2{
+    position: fixed;
+    z-index: 2;
+    background-color: #000000;
+    height: 100%;
+    width: 50%;
+    transform: translateX(100%);
+    transition: 2s ease;
+}
+
 
 .Section1 {
     min-height: 100vh;
@@ -18,12 +42,16 @@ main {
     align-items: center;
     justify-content: center;
     background-color: black;
-    padding: 50px 180px;
+    padding: 70px 130px;
 }
 
 .Divsec1 {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    position: relative;
+    gap: 40px;
 }
 
 .Sec1texts {
@@ -88,9 +116,9 @@ main {
 }
 
 .LogoSec1 {
-    min-width: 50%;
-    height: 10%;
-    margin-left: 55px;
+    position: relative;
+    min-width: 100%;
+    height: auto;
 }
 
 /* Seçao 2 */
@@ -467,6 +495,189 @@ main {
     border-radius: 25px;
     box-shadow: 0px 0px 20px 0px #FFCE0E;
 }
+
+/* Seçao 7 */
+
+.Section7{
+    min-height: 100vh;
+    padding: 70px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: solid 3px #D8B631;
+    background-color: #000000;
+}
+
+.divSec7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 73%;
+    height: 100%;
+}
+
+.divh1Sec7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: solid 3px #D8B631;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.h1Sec7{
+    color: #FFFFFF;
+    font-size: 29px;
+    font-weight: 400;
+    height: 30px;
+}
+
+.h2Sec7{
+    color: #D8B631;
+    font-size: 39px;
+    font-weight: 900;
+}
+
+.Sec7Depoiments{
+    display: flex;
+    width: 800px;
+    height: 550px;
+    gap: 10px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 15px;
+}
+
+.imgDP{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.ButtonSec7{
+    font-size: 21px;
+    font-weight: 700;
+    height: 50px;
+    width: 550px;
+    border-radius: 30px;
+    color: white;
+    background-image: linear-gradient(325deg, #D8B631 0%, #FFCE0E 100%);
+    box-shadow: 0px 0px 10px 0px #FFCE0E;
+    margin-top: 80px;
+    cursor: pointer;
+}
+.ButtonSec7:hover {
+    box-shadow: 0px 0px 20px 0px #FFCE0E;
+}
+
+/* Seçao 8 */
+
+.Section8{
+    min-height: 100vh;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-bottom: solid 3px #FFCE0E;
+}
+
+.SpanSec8{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.divhSec8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 3px #D8B631;
+    margin-bottom: 20px;
+}
+
+.h1Sec8{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.h2Sec8{
+    color: #D8B631;
+    font-size: 39px;
+    font-weight: 900;
+}
+
+.liSec8{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.Sec8SpanLi{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 65px;
+}
+
+.h1Title8{
+    border-bottom: solid 3px #D8B631;
+    width: 290px;
+    padding-bottom: 15px;
+}
+
+.LisTitle8{
+    color: #D8B631;
+    font-size: 30px;
+    font-weight: 400;
+    width: 390px;
+    line-height: 1;
+    position: relative;
+}
+
+.LisTitle82{
+    color: #D8B631;
+    font-size: 30px;
+    font-weight: 400;
+    width: 790px;
+    line-height: 1;
+    position: relative;
+}
+
+.liSec82{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    width: 490px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.TextSec8{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    width: 480px;
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+.TextSec82{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    width: 590px;
+    margin-bottom: 5px;
+    text-align: start;
+}
+
 
 /* Seçao 9 */
 
