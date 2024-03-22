@@ -20,11 +20,11 @@
         <div class="Mask1"></div>
         <div class="Mask2"></div>
 
-        <i class='bx bxl-whatsapp ContactIcon'></i>
+        <i onclick="abrirConversa()" class='bx bxl-whatsapp ContactIcon'></i>
 
         <section class="Section1">
 
-            <div class="Divsec1">
+            <div class="Divsec1 hidden">
 
                 <div class="Sec1texts">
                     <h1 class="H1sec1">THANOS BLACK</h1>
@@ -57,7 +57,7 @@
                         <li class="Lisec1">Ajuda na manutenção e proteção muscular</li>
                     </ul>
 
-                    <button class="ButtonSec1">QUERO TER ESSAS MUDANÇAS</button>
+                    <button onclick="MoveSectionBuy()" class="ButtonSec1">QUERO TER ESSAS MUDANÇAS</button>
 
                 </div>
 
@@ -67,9 +67,9 @@
 
         </section>
 
-        <section class="Section2">
+        <section class="Section2 ">
 
-            <div class="Sec2Div">
+            <div class="Sec2Div hidden">
 
                 <div class="DivTextSec2">
                     <h2 class="TextSec2">ESSE SUPLEMENTO VAI TE SURPREENDER! CLIQUE NO LINK ABAIXO E CONHEÇA O THANOS
@@ -79,7 +79,7 @@
                 <iframe class="VideoSec2" src="https://www.youtube.com/embed/BpRNCNselUI" frameborder="0"
                     allowfullscreen></iframe>
 
-                <button class="ButtonSec2">QUERO ESSA MUDANÇA NA MINHA VIDA</button>
+                <button onclick="MoveSectionBuy()" class="ButtonSec2">QUERO ESSA MUDANÇA NA MINHA VIDA</button>
 
             </div>
 
@@ -94,7 +94,7 @@
 
             <div class="SecDivsImagesSec3">
 
-                <div class="Sec3DivImages1">
+                <div class="Sec3DivImages1 hidden">
 
                     <div class="DivImg3">
                         <img class="imgsec3" src="./images/foto_thanos 1.png" alt="">
@@ -124,7 +124,7 @@
 
                 </div>
 
-                <div class="Sec3DivImages2">
+                <div class="Sec3DivImages2 hidden">
 
                     <div class="DivImg3">
                         <img class="imgsec3" src="./images/foto_thanos 4.png" alt="">
@@ -149,7 +149,7 @@
 
             </div>
 
-            <button class="ButtonSec3">QUERO TER ESSA MUNDANÇA NA MINHA VIDA</button>
+            <button onclick="MoveSectionBuy()" class="ButtonSec3 hidden">QUERO TER ESSA MUNDANÇA NA MINHA VIDA</button>
 
         </section>
 
@@ -161,7 +161,7 @@
                 <h1 class="h2sec4">THANOS BLACK?</h1>
             </div>
 
-            <div class="DivSec4Center">
+            <div class="DivSec4Center hidden">
 
                 <p class="textsec4">Ele foi criado por especialistas e laboratório com a intenção de oferecer um
                     suplemento que te
@@ -172,7 +172,7 @@
 
             </div>
 
-            <div class="DivSec4End">
+            <div class="DivSec4End hidden">
                 <p class="text1Sec4">Eu sei que parece bom demais, mas peraí - não se preocupe! Pois o Thanos Black não
                     tem nenhum
                     efeito colateral negativo à sua saúde..</p>
@@ -189,24 +189,24 @@
                 <p class="Sec5TextStart">O Thanos Black vai te garantir um aumento considerável na sua testosterona de
                     forma…</p>
 
-                <p class="Sec5TextCenter">
+                <p class="Sec5TextCenter hidden">
                     <b class="BSec5">Barata</b> - para um suplemento com efeitos próximos aos de anabolizantes, ele está
                     muito em conta.
                 </p>
 
-                <p class="Sec5TextCenter">
+                <p class="Sec5TextCenter hidden">
                     <b class="BSec5">Segura</b> - apesar de causar um efeito próximo ao que injeção de hormônio teria,
                     ele não traz as
                     consequências e riscos que são comuns aos hormônios
                 </p>
 
-                <p class="Sec5TextCenter">
+                <p class="Sec5TextCenter hidden">
                     <b class="BSec5">Rápida</b> - os resultados, tão na sua disposição íntima, quanto os ligados ao seu
                     treino e físico -
                     começam a aparecer em poucas semanas
                 </p>
 
-                <p class="Sec5TextEnd">E mais, além dos inúmeros benefícios à saúde, sua composição também vai te dar um
+                <p class="Sec5TextEnd hidden">E mais, além dos inúmeros benefícios à saúde, sua composição também vai te dar um
                     gás extra na hora
                     de passar um tempo a sós com sua parceira ou parceiro!</p>
 
@@ -234,10 +234,10 @@
 
             </span>
 
-            <img class="ImageSec6" src="./images/foto thanos 3.png" alt="">
+            <img class="ImageSec6 hidden" src="./images/foto thanos 3.png" alt="">
 
         </section>
-
+ 
         <section class="Section7">
 
             <div class="divSec7">
@@ -247,7 +247,7 @@
                     <h1 class="h2Sec7">QUEM USA</h1>
                 </div>
 
-                <div class="Sec7Depoiments">
+                <div class="Sec7Depoiments hidden">
                     <img class="imgDP" src="./images/Depoiments/Feedback-1.jpeg" alt="">
                     <img class="imgDP" src="./images/Depoiments/Feedback-2.png" alt="">
                     <img class="imgDP" src="./images/Depoiments/Feedback-3.png" alt="">
@@ -256,7 +256,7 @@
                     <img class="imgDP" src="./images/Depoiments/Feedback-6.png" alt="">
                 </div>
 
-                <button class="ButtonSec7">CLIQUE AQUI E GARANTA O SEU</button>
+                <button onclick="MoveSectionBuy()" class="ButtonSec7 hidden">CLIQUE AQUI E GARANTA O SEU</button>
 
             </div>
 
@@ -272,14 +272,14 @@
                 </div>
 
                 <ul>
-                    <li class="liSec8">aumentar do seu interesse íntimo de forma saudável</li>
-                    <li class="liSec8">facilita a ter mais disposição para seu treino e cotidiano</li>
-                    <li class="liSec8">trabalhar para ter bons resultados na academia</li>
-                    <li class="liSec8">mais definição sem sofrimento</li>
-                    <li class="liSec8">shape mais saudável e resistente</li>
+                    <li class="liSec8 hidden">aumentar do seu interesse íntimo de forma saudável</li>
+                    <li class="liSec8 hidden">facilita a ter mais disposição para seu treino e cotidiano</li>
+                    <li class="liSec8 hidden">trabalhar para ter bons resultados na academia</li>
+                    <li class="liSec8 hidden">mais definição sem sofrimento</li>
+                    <li class="liSec8 hidden">shape mais saudável e resistente</li>
                 </ul>
 
-                <div class="Sec8SpanLi">
+                <div class="Sec8SpanLi hidden">
                     <div class="h1Title8">
                         <h1 class="LisTitle8">E MAIS… O THANOS É PARA
                             HOMENS E MULHERES QUE</h1>
@@ -295,7 +295,7 @@
                     </ul>
                 </div>
 
-                <div class="Sec8SpanLi">
+                <div class="Sec8SpanLi hidden">
                     <div class="h1Title8">
                         <h1 class="LisTitle82">MAS, PARA QUEM O THANOS NÃO É</h1>
                     </div>
@@ -313,7 +313,7 @@
                     </ul>
                 </div>
 
-                <div class="Sec8SpanLi">
+                <div class="Sec8SpanLi hidden">
                     <div class="h1Title8">
                         <h1 class="LisTitle82">PRODUTO APROVADO PELA ANVISA</h1>
                     </div>
@@ -324,7 +324,7 @@
 
                 </div>
 
-                <div class="Sec8SpanLi">
+                <div class="Sec8SpanLi hidden">
                     <div class="h1Title8">
                         <h1 class="LisTitle82">FÓRMULA ÚNICA</h1>
                     </div>
@@ -362,7 +362,7 @@
                     <h1 class="h2Sec9">OFERTA DO MOMENTO!</h1>
                 </div>
 
-                <div class="DivProducionsSec9">
+                <div class="DivProducionsSec9 hidden">
 
                     <div class="ProductSec9">
                         <img class="ProductImage" src="./images/Frasco1.png" alt="">
@@ -400,7 +400,7 @@
                     porcaria num fim de semana. Fique um fim de semana no mês sem besteira, invista na sua
                     performance e bem-estar.</p>
 
-                <button class="ButtonSec9">ENTRE EM CONTATO E REALIZE A COMPRA</button>
+                <button onclick="abrirConversa()" class="ButtonSec9">ENTRE EM CONTATO E REALIZE A COMPRA</button>
 
             </div>
 
@@ -418,53 +418,53 @@
 
                 <ul>
 
-                    <li onclick="ShowAsk()" class="liSec10">Quantas cápsulas vem em um frasco?
+                    <li class="liSec10 hidden">Quantas cápsulas vem em um frasco?
                         <p class="liP10">Um frasco de Thanos Black contém 60 cápsulas.</p>
                     </li>
-                    <li onclick="ShowAsk()" class="liSec10">Quantas cápsulas tomar por dia?
+                    <li class="liSec10 hidden">Quantas cápsulas tomar por dia?
                         <p class="liP10">Se você é aluno Elite da Musculação, não se preocupe, nossa equipe vai definir
                             direitinho
                             quantas cápsulas você deve tomar por dia. Se você ainda não é aluno nosso, recomendamos 3
                             por dia.</p>
                     </li>
-                    <li onclick="ShowAsk()" class="liSec10">Qual o melhor horário para consumir o Thanos Black?
+                    <li class="liSec10 hidden">Qual o melhor horário para consumir o Thanos Black?
                         <p class="liP10">O melhor efeito do Thanos vem se você consumi-lo antes de dormir. Esse é o
                             horário que
                             recomendamos aos nossos alunos.</p>
                     </li>
-                    <li onclick="ShowAsk()" class="liSec10">Quando comprar o Thanos Black, quanto tempo vai demorar para
+                    <li class="liSec10 hidden">Quando comprar o Thanos Black, quanto tempo vai demorar para
                         chegar?
                         <p class="liP10">Isso depende da sua localização. Nossa fornecedora fica no estado de São Paulo,
                             por isso,
                             pedidos feitos para o sudeste do Brasil são os de menor frete. No caso mais extremo, pedidos
                             para o extremo norte do Brasil podem levar no máximo 11 dias úteis.</p>
                     </li>
-                    <li onclick="ShowAsk()" class="liSec10">Qual o valor do frete?
+                    <li class="liSec10 hidden">Qual o valor do frete?
                         <p class="liP10">Se você é aluno Elite da Musculação, você NÃO PAGA taxa de frete! Se você não é
                             aluno nosso,
                             o valor pode flutuar, a depender também da sua localização e da empresa de transporte que
                             preferir.</p>
                     </li>
-                    <li onclick="ShowAsk()" class="liSec10">Existe alguma contraindicação?
+                    <li class="liSec10 hidden">Existe alguma contraindicação?
                         <p class="liP10">Não. Como o Thanos Black usa apenas de ingredientes naturais, ele não pode
                             causar nenhum dano
                             a nenhum tipo de pessoa.</p>
                     </li>
-                    <li onclick="ShowAsk()" class="liSec10">Sou mulher, posso consumir Thanos Black?
+                    <li class="liSec10 hidden">Sou mulher, posso consumir Thanos Black?
                         <p class="liP10">Com certeza! Mulheres já produzem 10 vezes menos testosterona que homens, o que
                             dificulta o
                             ganho de massa magra e a queima de gordura. E mais, muitas mulheres fazem uso de
                             anticoncepcional, que faz uso de hormônios que inibem a testosterona, diminuindo ainda mais
                             a sua capacidade de ter os ganhos que busca na academia</p>
                     </li>
-                    <li onclick="ShowAsk()" class="liSec10">O uso do suplemento pode causar queda de cabelo ou espinhas?
+                    <li class="liSec10 hidden">O uso do suplemento pode causar queda de cabelo ou espinhas?
                         <p class="liP10">Não. O hanos Black só potencializa sua produção natural de testosterona, ou
                             seja, ele não
                             pode e não vai te fazer produzir mais do que o que seria natural para seu corpo. Sendo
                             assim, você não vai produzir tanta testosterona quanto um homem, apenas vai passar a
                             produzir o máximo que o seu corpo pode utilizar bem.</p>
                     </li>
-                    <li onclick="ShowAsk()" class="liSec10">Qual a diferença entre o Thanos Black e o Testolife?
+                    <li class="liSec10 hidden">Qual a diferença entre o Thanos Black e o Testolife?
                         <p class="liP10">ambos têm como consequência principal a produção de testosterona, mas enquanto
                             o Testolife
                             ajuda na vasodilatação, força física e funciona como um ótimo pré-treino, o Thanos Black é o
@@ -482,6 +482,74 @@
 
 </body>
 
-<script src="./scripts.js"></script>
+<script>
+
+function abrirConversa() {
+
+const numeroTelefone = "+5511996570248";
+
+const linkWhatsapp = "https://wa.me/" + numeroTelefone;
+
+window.open(linkWhatsapp);
+}
+
+
+const Mask1 = document.querySelector('.Mask1')
+const Mask2 = document.querySelector('.Mask2')
+
+function OpenMask() {
+Mask1.style.transform = `translateX(-105%)`
+Mask2.style.transform = `translateX(200%)`
+
+}
+
+OpenMask()
+
+const AllLi = document.querySelectorAll('.liSec10')
+
+AllLi.forEach((li, e) => {
+
+li.addEventListener('click', e => {
+
+
+    if (li.classList.contains('select')) {
+
+        li.querySelector('.liP10').classList.remove('show')
+        li.classList.remove('select')
+        
+
+    } else {
+
+        li.querySelector('.liP10').classList.add('show')
+        li.classList.add('select')
+
+    }
+
+})
+
+})
+
+const myObserver = new IntersectionObserver((entries) => {
+entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('Secshow')
+    } else {
+        entry.target.classList.remove('Secshow')
+    }
+})
+})
+
+const elements = document.querySelectorAll('.hidden')
+
+elements.forEach((element) => myObserver.observe(element))
+
+function MoveSectionBuy() {
+let Section3 = document.querySelector('.Section9')
+
+Section3.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+
+
+</script>
 
 </html>
