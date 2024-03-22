@@ -20,11 +20,11 @@
         <div class="Mask1"></div>
         <div class="Mask2"></div>
 
-        <i onclick="abrirConversa()" class='bx bxl-whatsapp ContactIcon'></i>
+        <i class='bx bxl-whatsapp ContactIcon'></i>
 
         <section class="Section1">
 
-            <div class="Divsec1 hidden">
+            <div class="Divsec1">
 
                 <div class="Sec1texts">
                     <h1 class="H1sec1">THANOS BLACK</h1>
@@ -61,7 +61,7 @@
 
                 </div>
 
-                <img class="LogoSec1" src="./images/FrascosLogo.png" alt="">
+                <img class="LogoSec1 hidden" src="./images/FrascosLogo.png" alt="">
 
             </div>
 
@@ -149,7 +149,7 @@
 
             </div>
 
-            <button onclick="MoveSectionBuy()" class="ButtonSec3 hidden">QUERO TER ESSA MUNDANÇA NA MINHA VIDA</button>
+            <button onclick="MoveSectionBuy()" class="ButtonSec3">QUERO TER ESSA MUNDANÇA NA MINHA VIDA</button>
 
         </section>
 
@@ -256,7 +256,7 @@
                     <img class="imgDP" src="./images/Depoiments/Feedback-6.png" alt="">
                 </div>
 
-                <button onclick="MoveSectionBuy()" class="ButtonSec7 hidden">CLIQUE AQUI E GARANTA O SEU</button>
+                <button onclick="MoveSectionBuy()" class="ButtonSec7">CLIQUE AQUI E VEJA NOSSA OFERTA</button>
 
             </div>
 
@@ -400,7 +400,7 @@
                     porcaria num fim de semana. Fique um fim de semana no mês sem besteira, invista na sua
                     performance e bem-estar.</p>
 
-                <button onclick="abrirConversa()" class="ButtonSec9">ENTRE EM CONTATO E REALIZE A COMPRA</button>
+                <button class="ButtonSec9">ENTRE EM CONTATO E REALIZE A COMPRA</button>
 
             </div>
 
@@ -482,74 +482,6 @@
 
 </body>
 
-<script>
-
-function abrirConversa() {
-
-const numeroTelefone = "+5511996570248";
-
-const linkWhatsapp = "https://wa.me/" + numeroTelefone;
-
-window.open(linkWhatsapp);
-}
-
-
-const Mask1 = document.querySelector('.Mask1')
-const Mask2 = document.querySelector('.Mask2')
-
-function OpenMask() {
-Mask1.style.transform = `translateX(-105%)`
-Mask2.style.transform = `translateX(200%)`
-
-}
-
-OpenMask()
-
-const AllLi = document.querySelectorAll('.liSec10')
-
-AllLi.forEach((li, e) => {
-
-li.addEventListener('click', e => {
-
-
-    if (li.classList.contains('select')) {
-
-        li.querySelector('.liP10').classList.remove('show')
-        li.classList.remove('select')
-        
-
-    } else {
-
-        li.querySelector('.liP10').classList.add('show')
-        li.classList.add('select')
-
-    }
-
-})
-
-})
-
-const myObserver = new IntersectionObserver((entries) => {
-entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-        entry.target.classList.add('Secshow')
-    } else {
-        entry.target.classList.remove('Secshow')
-    }
-})
-})
-
-const elements = document.querySelectorAll('.hidden')
-
-elements.forEach((element) => myObserver.observe(element))
-
-function MoveSectionBuy() {
-let Section3 = document.querySelector('.Section9')
-
-Section3.scrollIntoView({ behavior: 'smooth', block: 'start' })
-}
-
-
-</script>
+<script src="./scripts.js"></script>
 
 </html>

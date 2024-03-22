@@ -1,3 +1,20 @@
+
+
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('Secshow')
+        } else {
+            entry.target.classList.remove('Secshow')
+        }
+    })
+})
+
+
+const ButtonContact = document.querySelector('.ButtonSec9')
+const ButtonIcon = document.querySelector('.ContactIcon')
+
+
 function abrirConversa() {
 
     const numeroTelefone = "+5511996570248";
@@ -6,6 +23,9 @@ function abrirConversa() {
 
     window.open(linkWhatsapp);
 }
+
+ButtonContact.addEventListener('click', abrirConversa)
+ButtonIcon.addEventListener('click', abrirConversa)
 
 
 const Mask1 = document.querySelector('.Mask1')
@@ -18,6 +38,7 @@ function OpenMask() {
 }
 
 OpenMask()
+
 
 const AllLi = document.querySelectorAll('.liSec10')
 
@@ -43,15 +64,6 @@ AllLi.forEach((li, e) => {
 
 })
 
-const myObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('Secshow')
-        } else {
-            entry.target.classList.remove('Secshow')
-        }
-    })
-})
 
 const elements = document.querySelectorAll('.hidden')
 
@@ -60,7 +72,7 @@ elements.forEach((element) => myObserver.observe(element))
 function MoveSectionBuy() {
     let Section3 = document.querySelector('.Section9')
 
-    Section3.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    Section3.scrollIntoView({ block: 'start', behavior: 'smooth' })
 }
 
 
