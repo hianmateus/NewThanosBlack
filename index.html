@@ -345,17 +345,11 @@
 
             <div class="MainSec9">
 
-                <p class="Sec9span1">Antes de você ver os preços, saiba disso!</p>
                 <p class="Sec9span2">O FRETE É TOTALMENTE DE GRAÇA!</p>
                 <p class="Sec9span1">Isso mesmo que você leu, além de estar recebendo em sua casa um produto único no
                     mercado, com
                     resultados só superados por anabolizantes, você ainda não vai pagar nada por isso, o frete é por
                     nossa conta!</p>
-                <p class="Sec9span2">MAS FICA LIGADO!</p>
-                <p class="Sec9span5">Devido a grande quantidade de ingredientes nosso produto demora a ser fabricado,
-                    portanto demora a
-                    reposição. E com o preço atual, temos muitos interessados, por isso corre enquanto temos estoque!
-                </p>
 
                 <div class="divHSec9">
                     <h1 class="h1Sec9">Se liga na nossa</h1>
@@ -395,12 +389,12 @@
 
                 </div>
 
+                <button class="ButtonSec9">ENTRE EM CONTATO E REALIZE A COMPRA</button>
+
                 <p class="TextEndSec9">O investimento em um pote do Thanos Black é igual ao que você gastaria saindo
                     para beber ou comer
                     porcaria num fim de semana. Fique um fim de semana no mês sem besteira, invista na sua
                     performance e bem-estar.</p>
-
-                <button class="ButtonSec9">ENTRE EM CONTATO E REALIZE A COMPRA</button>
 
             </div>
 
@@ -482,6 +476,88 @@
 
 </body>
 
-<script src="./scripts.js"></script>
+<script>
+
+function abrirConversa() {
+
+const numeroTelefone = "+5511992575048";
+
+const linkWhatsapp = "https://wa.me/" + numeroTelefone;
+
+window.open(linkWhatsapp);
+}
+    
+
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('Secshow')
+        } else {
+            entry.target.classList.remove('Secshow')
+        }
+    })
+})
+
+
+const ButtonContact = document.querySelector('.ButtonSec9')
+const ButtonIcon = document.querySelector('.ContactIcon')
+
+
+ButtonContact.addEventListener('click', abrirConversa)
+ButtonIcon.addEventListener('click', abrirConversa)
+
+
+const Mask1 = document.querySelector('.Mask1')
+const Mask2 = document.querySelector('.Mask2')
+
+function OpenMask() {
+    Mask1.style.transform = `translateX(-105%)`
+    Mask2.style.transform = `translateX(200%)`
+
+}
+
+OpenMask()
+
+
+const AllLi = document.querySelectorAll('.liSec10')
+
+AllLi.forEach((li, e) => {
+
+    li.addEventListener('click', e => {
+
+
+        if (li.classList.contains('select')) {
+
+            li.querySelector('.liP10').classList.remove('show')
+            li.classList.remove('select')
+            
+
+        } else {
+
+            li.querySelector('.liP10').classList.add('show')
+            li.classList.add('select')
+
+        }
+
+    })
+
+})
+
+
+const elements = document.querySelectorAll('.hidden')
+
+elements.forEach((element) => myObserver.observe(element))
+
+function MoveSectionBuy() {
+    let Section3 = document.querySelector('.Section9')
+
+    Section3.scrollIntoView({ block: 'start', behavior: 'smooth' })
+}
+
+
+
+
+    
+</script>
 
 </html>

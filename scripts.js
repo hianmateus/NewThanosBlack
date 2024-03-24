@@ -17,7 +17,7 @@ const ButtonIcon = document.querySelector('.ContactIcon')
 
 function abrirConversa() {
 
-    const numeroTelefone = "+5511996570248";
+    const numeroTelefone = "+5511992575048";
 
     const linkWhatsapp = "https://wa.me/" + numeroTelefone;
 
